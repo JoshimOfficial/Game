@@ -1,0 +1,66 @@
+body {
+    transition: 1s;
+}
+.container {
+    border: 1px solid #b7bcc7;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.game_main  {
+    border: 1px solid #b7bcc7;
+    border-radius: 5px;
+    max-width: 715px;
+    padding: 30px;
+    margin: auto;
+
+}
+.mole_sec {
+    border: 1px solid #b7bcc7;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.grass {
+    height: 270px;
+    margin-top: -5px;
+    margin-left: -20px;
+    pointer-events: none;
+}
+
+.mole {
+    height: 173px;
+    margin-top: -110px;
+    margin-left: 20px;
+    
+}
+.mole_img {
+    height: 173px;
+    margin-top: -110px;
+    margin-left: 20px; 
+}
+.user_section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score_btn {
+    cursor: context-menu!important;
+    transition: 1s;
+}
+
+h6 {
+    transition: 1s;
+}
+
+
+.dark_alert {
+    opacity: 0;
+    text-align: center;
+    color: white;
+    background: #404248;
+    border: 1px solid #5e6c81;
+    transition: 1s;
+}
