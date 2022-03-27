@@ -24,9 +24,9 @@ body {
 }
 .grass {
     height: 270px;
-    margin-top: -5px;
     margin-left: -20px;
     pointer-events: none;
+    transition: 1s;
 }
 
 .mole {
@@ -37,8 +37,9 @@ body {
 }
 .mole_img {
     height: 173px;
+    margin-left: 20px;
     margin-top: -110px;
-    margin-left: 20px; 
+    transition: 1s;
 }
 .user_section {
     margin-top: 30px;
@@ -63,4 +64,66 @@ h6 {
     background: #404248;
     border: 1px solid #5e6c81;
     transition: 1s;
+}
+
+
+.moon{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transform: rotate(230deg);
+    box-shadow: inset 0px 16px #b0bcce, inset 0px 16px 1px 1px #999;
+  }
+
+
+
+  .star_sec {
+    height: 50px;
+    margin-top: -60px;
+    text-align: center;
+    color: #7a87a2;
+    opacity: 0;
+    transition: 3s;
+  }
+
+  .two {
+      margin-right: -60px;
+  }
+
+  .three {
+    margin-top: -32px;
+    margin-right: 23px;
+  }
+  .four {    
+    margin-top: -4px;
+    margin-left: 19px;
+  }
+  .five {
+    margin-top: -56px;
+    margin-right: 49px;
+  }
+  .six {
+    margin-right: 84px;
+    margin-top: -16px;
+}
+
+.seven {
+
+    margin-left: 90px;
+}
+
+.eight {
+    margin-left: 90px;
+    margin-top: -60px;
+}
+
+.nine {
+    margin-left: 170px;
+}
+
+.ten {
+    margin-left: 154px;
+    margin-top: -46px;
 }
