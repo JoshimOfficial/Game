@@ -15,6 +15,7 @@ strtBtn.addEventListener("click", ()=>{
         let createMole = document.createElement("img");
         createMole.src = "./img/mole.png";
         createMole.setAttribute("class", "mole_img");
+        createMole.style.marginTop="-110px"
         ml[randomNumber].appendChild(createMole);
 
         setTimeout(function(){
@@ -29,6 +30,8 @@ strtBtn.addEventListener("click", ()=>{
             score_sec.innerText =score_arry.length;
         });
     }, setIntervalTime)
+
+    strtBtn.disabled = true;
 
 })
 
@@ -64,6 +67,22 @@ web_modes.addEventListener("click", ()=>{
         img[i].style.filter = "brightness(80%)";
     }
 
+    let grassFixWithMoon = document.querySelectorAll(".grass");
+    for(let i = 0; i< grassFixWithMoon.length; i++) {
+        grassFixWithMoon[i].style.marginTop = "-30px"
+    }
+
+    let moonCreate = document.querySelectorAll("#moon")
+    for(let i = 0; i< moonCreate.length; i++) {
+        moonCreate[i].setAttribute("class", "moon")
+    }
+
+    let star = document.querySelectorAll(".star_sec");
+    for(let i = 0; i <star.length; i++) {
+        star[i].style.opacity = "1";
+    }
+
+
     darkclicker += 1;
     if(darkclicker > 1) {
         if(document.body.style.background = "#202124") {
@@ -76,3 +95,11 @@ web_modes.addEventListener("click", ()=>{
         
     }
 })
+
+
+let puseTheGame = document.querySelector(".puse_btn");
+
+puseTheGame.onclick = function() {
+    alert("The game has pused! Click 'OK' button to continue")
+}
+
